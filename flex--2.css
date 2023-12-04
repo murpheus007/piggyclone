@@ -1,0 +1,123 @@
+.flex--2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+.flex-box {
+    height: 450px;
+    width: 49%;
+    background: white;
+    padding: 30px 10px 30px 30px;
+    cursor: pointer;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    transition: background-color .5s ease;
+}
+.flex-box:not(:first-child):hover p, .flex-box:hover span {
+    color: white;
+}
+.box-1 {
+    background: transparent;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-weight: 700;
+    margin: 0;
+    margin-top: 25px;
+    font-size: 36px;
+    line-height: 42px;
+}
+.box-2 .title, .box-2 span {
+    color: rgb(0, 51, 153);
+}
+.box-2:hover {
+    background-color: rgb(0, 51, 153);
+}
+
+.box-3 .title, .box-3 span {
+    color: rgb(50, 150, 255);
+}
+.box-3:hover {
+    background-color:rgb(50, 150, 255);
+}
+.box-4 .title, .box-4 span {
+    color: rgb(6, 155, 64);
+}
+.box-4:hover {
+    background-color:rgb(6, 155, 64);
+}
+.box-5 .title, .box-5 span {
+    color: rgb(229, 40, 142);
+}
+.box-5:hover {
+    background-color:rgb(229, 40, 142);
+}
+.box-6 .title, .box-6 span {
+    color: rgb(12, 24, 37)
+}
+.box-6:hover {
+    background-color:rgb(12, 24, 37)
+}
+.box-1 .heading {
+    width: 300px;
+    text-align: center;
+}
+.flex-box .text {
+    font-size: 22px;
+    width: 350px;
+    line-height: 35px;
+    text-align: start;
+    margin-top: 18px;
+    margin-bottom: 40px;
+}
+.box-1 .text {
+    margin: 18px auto 53px;
+    font-size: 24px;
+    width: 300px;
+    max-width: 350px;
+    line-height: 35px;
+    text-align: center;
+}
+span {
+    line-height: 27.2px;
+    font-size: 16px;
+    visibility: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    box-sizing: border-box;
+    position: absolute;
+    top: 85%;
+}
+
+.img-card {
+    /* visibility: hidden;
+    opacity: 0;
+    z-index: -1; */
+    position: absolute;
+    width: 100px;
+    transition: all .5s ease;
+    bottom: 0;
+    right: -100px;
+}
+.img-card img {
+    width: 100%;
+    height: 99.3px;
+    cursor: pointer;
+    color: inherit;
+    box-sizing: border-box;
+}
+.flex-box:hover .img-card {
+    /* visibility: visible;
+    opacity: 1;
+    z-index: 1; */
+    position: absolute;
+    right: 20px;
+    transform: translate(-70px, -61px) scale(2.5, 2.4);
+}
